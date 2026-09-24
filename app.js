@@ -22,13 +22,13 @@
 // AKTIVITAS 1: Setup Berkas & Integrasi JavaScript Eksternal
 // ============================================================
 // Menampilkan judul sistem ke tab Console (F12)
+
 console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
 
-
-
+console.log("Skrip app.js Berhasil Terhubung!");
 
 // ============================================================
 // AKTIVITAS 2: Variabel & Dialog Interaktif
@@ -40,16 +40,20 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
 
-
-
+const Nama_Kedai = "Kopi PSTI Kampus";
+let Nama_Kasir = "Kak Eko";
+let Shift_Kerja = "Pagi";
+console.log("Nama Kedai:" , Nama_Kedai);
+console.log("Nama Kasir Awal:" , Nama_Kasir);
+console.log("Shift Kerja:" , Shift_Kerja)
 
 // ---- DEMO PERBEDAAN LET vs CONST ----
 // TODO 2B:
 // Ubah (re-assign) nilai variabel "namaKasir" dengan nama kasir lain,
 // lalu cetak ke Console untuk membuktikan bahwa variabel "let" nilainya dapat diubah.
 
-
-
+Nama_Kasir = "Kak Maca";
+console.log("Nama Kasir Setelah Diubah : " + Nama_Kasir);
 
 // ---- BAGIAN 2B: INPUT INTERAKTIF & PENGANDAIAN DASAR ----
 // TODO 2C:
@@ -59,8 +63,16 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
 
-
-
+alert("Selamat Datang di Kedai Kopi PSTI Kampus!");
+let Nama_Pelanggan = prompt("Halo! Masukkan Nama Pelanggan Untuk Memulai:");
+if (Nama_Pelanggan) {
+    alert("Halo," + Nama_Pelanggan + "! Selamat Bersinggah di " + Nama_Kedai + "." );
+    console.log("Nama Pelanggan : " + Nama_Pelanggan);
+} else {
+    Nama_Pelanggan = "Pelanggan Setia";
+    alert("Nama Pelanggan Tidak Ada. Selamat Bersinggah, Pelanggan Setia!");
+    console.log("Nama Pelanggan : " + Nama_Pelanggan);
+}
 
 // ============================================================
 // AKTIVITAS 3: Operasi Aritmatika — Akumulasi Poin Transaksi
@@ -73,8 +85,16 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
 
+let Poin_Kopi = 45;
+let Poin_Makanan = 35;
+let Poin_Merchandise = 20;
+let Total_Poin = Poin_Kopi + Poin_Makanan + Poin_Merchandise;
 
-
+console.log("=== RINCIAN PEROLEHAN POIN PELANGGAN : " +  Nama_Pelanggan + "===");
+console.log("Poin Kopi        : " + Poin_Kopi);
+console.log("Poin Makanan     : " + Poin_Makanan);
+console.log("Poin Merchandise : " + Poin_Merchandise);
+console.log("Total Poin       : " + Total_Poin);
 
 // ============================================================
 // AKTIVITAS 4: Percabangan if-else — Penentuan Tier Membership
