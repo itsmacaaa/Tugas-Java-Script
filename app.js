@@ -70,7 +70,7 @@ if (Nama_Pelanggan) {
     console.log("Nama Pelanggan : " + Nama_Pelanggan);
 } else {
     Nama_Pelanggan = "Pelanggan Setia";
-    alert("Nama Pelanggan Kosong. Selamat Bersinggah, Pelanggan Setia!");
+    alert("Nama Pelanggan Tidak Ada. Selamat Bersinggah, Pelanggan Setia!");
     console.log("Nama Pelanggan : " + Nama_Pelanggan);
 }
 
