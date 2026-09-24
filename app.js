@@ -90,6 +90,7 @@ let Poin_Makanan = 35;
 let Poin_Merchandise = 20;
 let Total_Poin = Poin_Kopi + Poin_Makanan + Poin_Merchandise;
 
+console.log("");
 console.log("=== RINCIAN PEROLEHAN POIN PELANGGAN : " +  Nama_Pelanggan + "===");
 console.log("Poin Kopi        : " + Poin_Kopi);
 console.log("Poin Makanan     : " + Poin_Makanan);
@@ -219,4 +220,5 @@ for (let i = 0; i < Menu_Rekomendasi.length; i++) {
 // Akhiri program dengan: console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
 
 console.log("Jumlah Menu Rekomendasi : " + Menu_Rekomendasi.length);
+console.log("");
 console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
